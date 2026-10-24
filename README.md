@@ -5,9 +5,9 @@ private networking, minimal compute/IAM and separate encrypted-state bootstrap
 configuration. It runs the real engine and provider schema with synthetic
 provider mocks. It creates no AWS resources and needs no AWS credentials.
 
-**Status:** implementation and development checks passed on 2026-10-24. Formal
-revision-bound local evidence, clean-clone verification, publication and hosted
-CI are pending. See [validation](docs/validation.md) for results and limitations.
+**Status:** bounded static/mock core and formal local/clean-clone gates passed
+on 2026-10-24. Publication and hosted CI are pending.
+See [validation](docs/validation.md) for revision-bound results and limitations.
 This is lab engineering work, not a production deployment or employment claim.
 
 ## What the core implements
@@ -66,8 +66,8 @@ intentional invalid inputs, and reject missing or skipped cases. Validation
 checks the configuration against the actual provider schema. The demo explains
 and exercises this local contract; it never starts a server or creates a VM.
 
-The documented command sequence is a release gate and is still awaiting the
-formal clean-clone run. Any unexpected nonzero exit is a failure to investigate,
+The documented command sequence passed the formal clean-clone run at
+`ca293dbd5afd`. Any unexpected nonzero exit is a failure to investigate,
 not a reason to remove a check. Expected invalid configurations are asserted
 inside tests; the containing test command succeeds only when rejection occurs.
 

@@ -1,18 +1,18 @@
 # Validation and evidence status
 
-Status on 2026-10-24: development checks pass; a clean committed source revision
-has not yet completed the formal local release gate in this report. Publication,
-exact-revision hosted CI and versioned release are pending. No success badge or
-cloud-deployed designation is warranted.
+Status on 2026-10-24: formal local controller and clean-clone gates passed.
+Publication, exact-revision hosted CI and versioned release are pending.
+Capability is statically validated; no cloud-deployed designation is warranted.
 
 | Profile | Current evidence | Status |
 | --- | --- | --- |
 | Tool/package provenance | Official metadata, six IaC tool archive hashes and five parser wheel hashes checked; JSON audit retained | Statically validated dependency metadata |
 | Provider setup | Native installation and multi-platform locks generated; original registry/lock failures preserved in dependency notes | Development execution; signing-key expiry remains open |
-| Native schema validation | Both roots passed with zero warnings on 2026-10-24 | Development execution; formal revision-bound report pending |
-| Native mocked plans | 23 runs passed; eight policy plans accepted, 16 unsafe mutations rejected | Development execution; formal report pending |
-| Unit tests and lint | 41 unit tests, Ruff, HCL formatting, TFLint, ShellCheck, shfmt and actionlint passed | Development execution on macOS ARM64 / Python 3.14.8 |
-| Security/clean-clone gates | Reviewed implementation ready for committed-source scans and fresh clone | Pending required gates |
+| Native schema validation | Both roots passed with zero warnings | Formal controller at `249c9dfbc7ef` |
+| Native mocked plans | 23 runs passed; eight policy plans accepted, 16 unsafe mutations rejected | Formal controller at `249c9dfbc7ef` |
+| Unit tests and lint | 41 unit tests, Ruff, HCL formatting, TFLint, ShellCheck, shfmt and actionlint passed | macOS ARM64 / Python 3.14.8 |
+| Working/staged/full-history secret scans | No findings | Passed in both formal profiles |
+| Standalone clean clone | Fresh bootstrap, doctor, validate, demo and security passed; clone stayed clean and was removed | Formal clone at `ca293dbd5afd` |
 | GitHub repository/CI/release | No verified publication or run attached here | Pending |
 | Real authenticated plan/apply | Not run; prohibited by task scope | Cloud deployment not authorized |
 | EC2 boot, effective IAM, connectivity, S3 locking/recovery | Not run | Unverified integration |
@@ -24,6 +24,13 @@ presenting reconstructed output as a recording. Current native lockfiles were
 independently inspected, and their hashes are recorded in that audit.
 
 ## Required release evidence
+
+The immutable [controller report](../evidence/249c9dfbc7ef-controller.json) records
+source `249c9dfbc7efca49aaee80c64c016903224ed733`. The independent
+[clean-clone report](../evidence/ca293dbd5afd-clean-clone.json) records
+`ca293dbd5afd2095d2e1667d67be6d2568ab625a`. Their implementation/pin fingerprints
+match; the latter revision added only the earlier controller report. Later
+evidence/documentation commits do not replace these tested identities.
 
 After the implementation is committed and stable, execute the README quickstart
 from an isolated temporary clone and produce the local record through the task

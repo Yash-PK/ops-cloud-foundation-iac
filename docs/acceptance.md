@@ -1,7 +1,7 @@
 # Bounded acceptance — defined before implementation
 
-Status on 2026-10-24: bounded implementation and development checks pass;
-revision-bound release gates and publication are next. No AWS API call,
+Status on 2026-10-24: bounded implementation, formal controller validation and
+clean-clone gates pass; publication and hosted CI are next. No AWS API call,
 authenticated plan, apply or cloud compatibility result is claimed.
 
 - Reusable AWS network module derives non-overlapping private subnets in two

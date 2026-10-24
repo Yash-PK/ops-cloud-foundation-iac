@@ -16,10 +16,12 @@ TFLint, ShellCheck, shfmt and actionlint passed. Python 3.14.8 bootstrap repaire
 the broken prior environment and installed the pinned pip certificate fix.
 These results are not formal revision-bound release proof.
 
-Formal local gates, clean clone, outgoing security review, GitHub publication,
-exact-head hosted CI and release are pending. The expired upstream provider
+Formal controller evidence passed at `249c9dfbc7ef`; the standalone clean clone
+passed at `ca293dbd5afd` and was removed. Both share the same implementation
+fingerprint. Working/staged/full-history scans passed with no findings.
+GitHub publication, exact-head hosted CI and release are pending. The expired upstream provider
 signing key remains an explicit unresolved limitation. See
 [validation](docs/validation.md) for the evidence distinction.
 
-No tested release commit or verified remote URL is recorded yet. Do not start
+No versioned release or verified remote URL is recorded yet. Do not start
 Project 6 until the current core's gates and publication status are resolved.

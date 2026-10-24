@@ -11,7 +11,8 @@
 - Documented the real registry access failure, native lock-migration repair
   and unresolved upstream provider signing-key expiry.
 - Added architecture, security boundaries, local demonstration and state
-  lifecycle guidance. Formal local release gates and hosted CI remain pending.
+  lifecycle guidance. Formal local controller/clean-clone gates passed; hosted CI
+  and release remain pending.
 - Completed 41 unit tests, 23 native mock plans, eight accepted policy plans and
   16 rejected unsafe mutations in development checks on 2026-10-24.
 - Added recoverable project-venv recreation and pinned Python 3.14.8 / pip 26.2.2
