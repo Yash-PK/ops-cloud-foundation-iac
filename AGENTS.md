@@ -1,6 +1,6 @@
 # Cloud foundation continuation
 
-This is the sole active engineering project after the first four completed cores.
+The bounded core is complete and v0.1.0 is released; preserve its tested evidence.
 Read docs/acceptance.md before implementation. Keep this sibling repository
 outside the portfolio hub. Build lab/reference engineering, not production or
 employment claims. Use the existing Git identity and preserve prior evidence.

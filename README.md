@@ -5,8 +5,8 @@ private networking, minimal compute/IAM and separate encrypted-state bootstrap
 configuration. It runs the real engine and provider schema with synthetic
 provider mocks. It creates no AWS resources and needs no AWS credentials.
 
-**Status:** bounded static/mock core and formal local/clean-clone gates passed
-on 2026-10-24. Publication and hosted CI are pending.
+**Status:** bounded static/mock core released as [v0.1.0](https://github.com/Yash-PK/ops-cloud-foundation-iac/releases/tag/v0.1.0)
+on 2026-10-24. Formal local/clean-clone gates and exact-release Ubuntu CI passed.
 See [validation](docs/validation.md) for revision-bound results and limitations.
 This is lab engineering work, not a production deployment or employment claim.
 

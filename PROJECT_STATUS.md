@@ -1,6 +1,6 @@
 # Project status
 
-Project 5 is the sole active portfolio engineering project. Its bounded core is
+Project 5's bounded core is complete and released. Its demonstrated scope is
 local OpenTofu validation and native AWS-provider mock plans. No cloud resources
 have been created and no authenticated plan has been run.
 
@@ -19,9 +19,15 @@ These results are not formal revision-bound release proof.
 Formal controller evidence passed at `249c9dfbc7ef`; the standalone clean clone
 passed at `ca293dbd5afd` and was removed. Both share the same implementation
 fingerprint. Working/staged/full-history scans passed with no findings.
-GitHub publication, exact-head hosted CI and release are pending. The expired upstream provider
+[Public repository](https://github.com/Yash-PK/ops-cloud-foundation-iac) ownership
+(`Yash-PK`), public visibility and `main` were verified. [Release v0.1.0](https://github.com/Yash-PK/ops-cloud-foundation-iac/releases/tag/v0.1.0)
+targets `3a999d994f62f1737eae111d53f83281d1c49f23`; its
+[exact-target Ubuntu x86-64 CI](https://github.com/Yash-PK/ops-cloud-foundation-iac/actions/runs/40064237585)
+passed, including the same 41 tests and native mock/policy checks. The release
+is non-draft and non-prerelease, published `2026-10-24T04:58:22Z` with all three
+evidence reports attached. The expired upstream provider
 signing key remains an explicit unresolved limitation. See
 [validation](docs/validation.md) for the evidence distinction.
 
-No versioned release or verified remote URL is recorded yet. Do not start
-Project 6 until the current core's gates and publication status are resolved.
+No required core/publication gate remains unresolved. Optional cloud execution
+and extensions remain unverified; Project 6 has not been started.

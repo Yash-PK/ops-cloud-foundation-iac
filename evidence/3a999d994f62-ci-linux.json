@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "revision": "3a999d994f62f1737eae111d53f83281d1c49f23",
+  "code_fingerprint": "49e15258578516b11eb3fa97aa2946d5f4422177567b14f7ef04f19c5eddbec9",
+  "profile": "controller",
+  "clean_at_start": true,
+  "started_at": "2026-10-24T04:55:49.315765+00:00",
+  "environment": {
+    "os": "Linux",
+    "release": "6.17.0-1022-azure",
+    "architecture": "x86_64",
+    "python": "3.14.8"
+  },
+  "commands": [
+    {
+      "argv": [
+        "make",
+        "doctor"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_seconds": 600,
+      "duration_seconds": 0.691,
+      "output": "$REPO/.venv/bin/python scripts/doctor.py\n{\n  \"os\": \"Linux\",\n  \"release\": \"6.17.0-1022-azure\",\n  \"architecture\": \"x86_64\",\n  \"python\": \"3.14.8\",\n  \"cloud\": \"disabled\",\n  \"virtualization\": \"not needed\",\n  \"privilege\": \"unprivileged\",\n  \"requirements\": \"2 CPU / 2 GiB RAM / 3 GiB disk recommended; bootstrap network; sequential tests\"\n}\ntofu: 1.13.1\ntflint: 0.64.0\nshellcheck: 0.11.0\nshfmt: 3.14.1\nactionlint: 1.7.12\ngitleaks: 8.30.1\npython-hcl2: 8.1.4\nLive plans, cloud apply/destroy, billing and credential discovery are unauthorized.\n"
+    },
+    {
+      "argv": [
+        "make",
+        "validate"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_seconds": 600,
+      "duration_seconds": 22.523,
+      "output": ".venv/bin/ruff check .\nAll checks passed!\n.venv/bin/ruff format --check .\n39 files already formatted\n.tools/bin/tofu fmt -check -recursive modules stacks\n$REPO/.venv/bin/python scripts/quality.py\nStructural guard, provider locks, document links and artifact boundaries: PASS\n.tools/bin/shellcheck scripts/demo.sh\n.tools/bin/shfmt -d -i 2 scripts/demo.sh\nPATH=\"$REPO/.tools/bin:$PATH\" .tools/bin/actionlint\n$REPO/.venv/bin/python scripts/iac.py lint\nTFLint: five modules/roots passed with bundled recommended rules\n$REPO/.venv/bin/python scripts/iac.py validate\nfoundation: native schema validation passed; 0 warning(s)\nstate-bootstrap: native schema validation passed; 0 warning(s)\nmake test\nmake[1]: Entering directory '$REPO'\n$REPO/.venv/bin/python -m unittest discover -s tests -v\ntest_broken_environment_is_preserved_before_recreation (test_bootstrap.EnvironmentRepair.test_broken_environment_is_preserved_before_recreation) ... ok\ntest_certificate_fix_failure_stops_bootstrap (test_bootstrap.EnvironmentRepair.test_certificate_fix_failure_stops_bootstrap) ... ok\ntest_command_success_requires_zero_integer_exit_and_complete_output (test_evidence.EvidenceCommands.test_command_success_requires_zero_integer_exit_and_complete_output) ... ok\ntest_one_failed_or_timed_out_command_invalidates_the_batch (test_evidence.EvidenceCommands.test_one_failed_or_timed_out_command_invalidates_the_batch) ... ok\ntest_complete_synthetic_clone_shape_is_accepted_by_shape_helper_only (test_evidence.EvidenceReports.test_complete_synthetic_clone_shape_is_accepted_by_shape_helper_only) ... ok\ntest_missing_or_failed_clone_assertion_is_rejected (test_evidence.EvidenceReports.test_missing_or_failed_clone_assertion_is_rejected) ... ok\ntest_missing_reordered_or_failed_required_command_is_rejected (test_evidence.EvidenceReports.test_missing_reordered_or_failed_required_command_is_rejected) ... ok\ntest_stale_dirty_incomplete_or_failed_report_is_rejected (test_evidence.EvidenceReports.test_stale_dirty_incomplete_or_failed_report_is_rejected) ... ok\ntest_unknown_profile_or_nondictionary_report_is_rejected (test_evidence.EvidenceReports.test_unknown_profile_or_nondictionary_report_is_rejected) ... ok\ntest_validation_does_not_rewrite_the_evidence (test_evidence.EvidenceReports.test_validation_does_not_rewrite_the_evidence) ... ok\ntest_environment_never_inherits_canary_credentials_or_cli_arguments (test_guard.ExecutionBoundary.test_environment_never_inherits_canary_credentials_or_cli_arguments) ... ok\ntest_live_operations_stop_before_any_tool_process (test_guard.ExecutionBoundary.test_live_operations_stop_before_any_tool_process) ... ok\ntest_mock_test_phase_never_requests_network (test_guard.ExecutionBoundary.test_mock_test_phase_never_requests_network) ... ok\ntest_network_initialization_still_uses_empty_credentials (test_guard.ExecutionBoundary.test_network_initialization_still_uses_empty_credentials) ... ok\ntest_only_registry_initialization_requests_network (test_guard.ExecutionBoundary.test_only_registry_initialization_requests_network) ... ok\ntest_unknown_operation_is_rejected_before_any_tool_process (test_guard.ExecutionBoundary.test_unknown_operation_is_rejected_before_any_tool_process) ... ok\ntest_validate_never_requests_network (test_guard.ExecutionBoundary.test_validate_never_requests_network) ... ok\ntest_all_file_hash_and_listing_functions_are_rejected_in_nested_values (test_guard.GuardFixture.test_all_file_hash_and_listing_functions_are_rejected_in_nested_values) ... ok\ntest_apply_refresh_target_and_run_overrides_are_rejected (test_guard.GuardFixture.test_apply_refresh_target_and_run_overrides_are_rejected) ... ok\ntest_cloud_hooks_data_and_unreviewed_sources_are_rejected (test_guard.GuardFixture.test_cloud_hooks_data_and_unreviewed_sources_are_rejected) ... ok\ntest_expression_object_keys_and_provider_functions_are_rejected (test_guard.GuardFixture.test_expression_object_keys_and_provider_functions_are_rejected) ... ok\ntest_local_module_cannot_hide_source_inside_ignored_tool_cache (test_guard.GuardFixture.test_local_module_cannot_hide_source_inside_ignored_tool_cache) ... ok\ntest_malformed_oversize_and_nonfile_hcl_are_rejected (test_guard.GuardFixture.test_malformed_oversize_and_nonfile_hcl_are_rejected) ... ok\ntest_missing_aliased_or_real_test_provider_is_rejected (test_guard.GuardFixture.test_missing_aliased_or_real_test_provider_is_rejected) ... ok\ntest_provider_drift_and_nonexact_constraints_are_rejected (test_guard.GuardFixture.test_provider_drift_and_nonexact_constraints_are_rejected) ... ok\ntest_safe_mock_plan_fixture_is_accepted (test_guard.GuardFixture.test_safe_mock_plan_fixture_is_accepted) ... ok\ntest_shadow_state_override_and_variable_files_are_rejected (test_guard.GuardFixture.test_shadow_state_override_and_variable_files_are_rejected) ... ok\ntest_symlink_is_rejected_without_following_target (test_guard.GuardFixture.test_symlink_is_rejected_without_following_target) ... ok\ntest_test_variables_cannot_read_host_files (test_guard.GuardFixture.test_test_variables_cannot_read_host_files) ... ok\ntest_default_disabled_profiles_have_zero_changes (test_policy.PlanBoundary.test_default_disabled_profiles_have_zero_changes) ... ok\ntest_disabled_profile_rejects_any_resource_change (test_policy.PlanBoundary.test_disabled_profile_rejects_any_resource_change) ... ok\ntest_enabled_plan_requires_complete_resource_set (test_policy.PlanBoundary.test_enabled_plan_requires_complete_resource_set) ... ok\ntest_malformed_plan_shapes_are_policy_errors (test_policy.PlanBoundary.test_malformed_plan_shapes_are_policy_errors) ... ok\ntest_negative_controls_reject_disabled_or_malformed_input (test_policy.PlanBoundary.test_negative_controls_reject_disabled_or_malformed_input) ... ok\ntest_negative_controls_report_if_a_mutation_is_accepted (test_policy.PlanBoundary.test_negative_controls_report_if_a_mutation_is_accepted) ... ok\ntest_provider_mode_and_noncreation_actions_fail_before_profile_checks (test_policy.PlanBoundary.test_provider_mode_and_noncreation_actions_fail_before_profile_checks) ... ok\ntest_unknown_profile_is_rejected_even_when_disabled (test_policy.PlanBoundary.test_unknown_profile_is_rejected_even_when_disabled) ... ok\ntest_document_accepts_standard_policy_shape (test_policy.PolicyDocuments.test_document_accepts_standard_policy_shape) ... ok\ntest_malformed_json_and_statement_shapes_are_policy_errors (test_policy.PolicyDocuments.test_malformed_json_and_statement_shapes_are_policy_errors) ... ok\ntest_named_role_arn_rejects_principal_wildcards_and_other_identity_types (test_policy.PolicyDocuments.test_named_role_arn_rejects_principal_wildcards_and_other_identity_types) ... ok\ntest_single_security_block_requires_exactly_one_list_item (test_policy.PolicyDocuments.test_single_security_block_requires_exactly_one_list_item) ... ok\n\n----------------------------------------------------------------------\nRan 41 tests in 0.393s\n\nOK\nPreserved old virtual environment at .runtime/venv-backups/8cd00ac5e21a4b21a195ad9b21789a68\n$REPO/.venv/bin/python scripts/iac.py test\nfoundation: 16 actual mocked plans passed, 5 policy plans accepted, 8 unsafe mutations rejected; zero cloud resources created\nstate-bootstrap: 7 actual mocked plans passed, 3 policy plans accepted, 8 unsafe mutations rejected; zero cloud resources created\nmake[1]: Leaving directory '$REPO'\n"
+    },
+    {
+      "argv": [
+        "make",
+        "demo"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_seconds": 600,
+      "duration_seconds": 15.297,
+      "output": "bash scripts/demo.sh\nMock-only AWS foundation: no credentials, API calls, state backend or resources.\nfoundation: 16 actual mocked plans passed, 5 policy plans accepted, 8 unsafe mutations rejected; zero cloud resources created\nstate-bootstrap: 7 actual mocked plans passed, 3 policy plans accepted, 8 unsafe mutations rejected; zero cloud resources created\nUnsafe copies of actual mock plans were rejected in memory; source stayed unchanged.\nRecovery: original plans still pass. No destructive fault or cloud cleanup is needed.\nBLOCKED: live/authenticated cloud operations are unauthorized. Use make test for explicit provider mocks.\nLive apply refusal: expected exit 3. Actual AWS reachability and IAM remain unverified.\n"
+    },
+    {
+      "argv": [
+        "make",
+        "security"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_seconds": 600,
+      "duration_seconds": 1.905,
+      "output": "$REPO/.venv/bin/python scripts/security.py\n\u001b[90m4:56AM\u001b[0m \u001b[32mINF\u001b[0m \u001b[1mscanned ~315530 bytes (315.53 KB) in 111ms\u001b[0m\n\u001b[90m4:56AM\u001b[0m \u001b[32mINF\u001b[0m \u001b[1mno leaks found\u001b[0m\n\u001b[90m4:56AM\u001b[0m \u001b[32mINF\u001b[0m \u001b[1mscanned ~315530 bytes (315.53 KB) in 110ms\u001b[0m\n\u001b[90m4:56AM\u001b[0m \u001b[32mINF\u001b[0m \u001b[1mno leaks found\u001b[0m\n\u001b[90m4:56AM\u001b[0m \u001b[32mINF\u001b[0m \u001b[1m4 commits scanned.\u001b[0m\n\u001b[90m4:56AM\u001b[0m \u001b[32mINF\u001b[0m \u001b[1mscanned ~317958 bytes (317.96 KB) in 253ms\u001b[0m\n\u001b[90m4:56AM\u001b[0m \u001b[32mINF\u001b[0m \u001b[1mno leaks found\u001b[0m\nWorking-tree and staged-file scans: PASS\n"
+    }
+  ],
+  "not_run": [
+    "AWS authenticated plan/apply, cloud IAM/reachability and backend recovery: unauthorized",
+    "Terraform-engine compatibility: unverified"
+  ],
+  "cloud_resources_created": false,
+  "native_mock_results": {
+    "foundation": {
+      "native_summary": {
+        "status": "pass",
+        "passed": 16,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 0
+      },
+      "policy_plans": {
+        "disabled_by_default": {
+          "resources": 0,
+          "profile": "foundation"
+        },
+        "edge_cannot_bypass_disabled_stack": {
+          "resources": 0,
+          "profile": "foundation"
+        },
+        "private_foundation": {
+          "resources": 11,
+          "profile": "foundation"
+        },
+        "optional_edge_stays_separate": {
+          "resources": 18,
+          "profile": "foundation"
+        },
+        "small_private_cidr": {
+          "resources": 11,
+          "profile": "foundation"
+        }
+      },
+      "negative_policies": [
+        {
+          "name": "public_instance",
+          "rejected": true,
+          "reason": "Public instance IP prohibited"
+        },
+        {
+          "name": "unencrypted_disk",
+          "rejected": true,
+          "reason": "Encrypted bounded gp3 root required"
+        },
+        {
+          "name": "open_ingress",
+          "rejected": true,
+          "reason": "Ingress must be exact VPC health port"
+        },
+        {
+          "name": "metadata_v1",
+          "rejected": true,
+          "reason": "IMDSv2 required"
+        },
+        {
+          "name": "privileged_role",
+          "rejected": true,
+          "reason": "Workload role must have no API permissions"
+        },
+        {
+          "name": "foreign_profile",
+          "rejected": true,
+          "reason": "Compute must use exactly the managed profile, role and security group"
+        },
+        {
+          "name": "foreign_security_group",
+          "rejected": true,
+          "reason": "Compute must use exactly the managed profile, role and security group"
+        },
+        {
+          "name": "private_default_route",
+          "rejected": true,
+          "reason": "Private route table must stay isolated"
+        }
+      ]
+    },
+    "state-bootstrap": {
+      "native_summary": {
+        "status": "pass",
+        "passed": 7,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 0
+      },
+      "policy_plans": {
+        "disabled_by_default": {
+          "resources": 0,
+          "profile": "state-bootstrap"
+        },
+        "secure_lab_state": {
+          "resources": 8,
+          "profile": "state-bootstrap"
+        },
+        "dev_has_distinct_keys": {
+          "resources": 8,
+          "profile": "state-bootstrap"
+        }
+      },
+      "negative_policies": [
+        {
+          "name": "public_state",
+          "rejected": true,
+          "reason": "All public-access protections required"
+        },
+        {
+          "name": "unencrypted_state",
+          "rejected": true,
+          "reason": "Exact KMS encryption required"
+        },
+        {
+          "name": "broad_iam",
+          "rejected": true,
+          "reason": "Unexpected operator statements"
+        },
+        {
+          "name": "state_force_delete",
+          "rejected": true,
+          "reason": "State bucket cannot force-delete data"
+        },
+        {
+          "name": "missing_encryption_denies",
+          "rejected": true,
+          "reason": "TLS and exact KMS upload denies required"
+        },
+        {
+          "name": "wrong_kms_key",
+          "rejected": true,
+          "reason": "Exact KMS encryption required"
+        },
+        {
+          "name": "suspended_versioning",
+          "rejected": true,
+          "reason": "State versioning required"
+        },
+        {
+          "name": "no_kms_rotation",
+          "rejected": true,
+          "reason": "KMS rotation/deletion window"
+        }
+      ]
+    }
+  },
+  "source_unchanged": true,
+  "finished_at": "2026-10-24T04:56:29.743095+00:00",
+  "passed": true
+}

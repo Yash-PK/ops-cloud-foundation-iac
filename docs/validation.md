@@ -1,7 +1,7 @@
 # Validation and evidence status
 
 Status on 2026-10-24: formal local controller and clean-clone gates passed.
-Publication, exact-revision hosted CI and versioned release are pending.
+Publication, exact-release hosted CI and v0.1.0 are verified.
 Capability is statically validated; no cloud-deployed designation is warranted.
 
 | Profile | Current evidence | Status |
@@ -13,7 +13,7 @@ Capability is statically validated; no cloud-deployed designation is warranted.
 | Unit tests and lint | 41 unit tests, Ruff, HCL formatting, TFLint, ShellCheck, shfmt and actionlint passed | macOS ARM64 / Python 3.14.8 |
 | Working/staged/full-history secret scans | No findings | Passed in both formal profiles |
 | Standalone clean clone | Fresh bootstrap, doctor, validate, demo and security passed; clone stayed clean and was removed | Formal clone at `ca293dbd5afd` |
-| GitHub repository/CI/release | No verified publication or run attached here | Pending |
+| GitHub repository/CI/release | Public `Yash-PK` repository and v0.1.0 verified at `3a999d994f62`; exact-target CI passed | Released static/mock core |
 | Real authenticated plan/apply | Not run; prohibited by task scope | Cloud deployment not authorized |
 | EC2 boot, effective IAM, connectivity, S3 locking/recovery | Not run | Unverified integration |
 
@@ -31,6 +31,14 @@ source `249c9dfbc7efca49aaee80c64c016903224ed733`. The independent
 `ca293dbd5afd2095d2e1667d67be6d2568ab625a`. Their implementation/pin fingerprints
 match; the latter revision added only the earlier controller report. Later
 evidence/documentation commits do not replace these tested identities.
+
+The [Linux controller report](../evidence/3a999d994f62-ci-linux.json) was downloaded
+unchanged from [Actions run 40064237585](https://github.com/Yash-PK/ops-cloud-foundation-iac/actions/runs/40064237585).
+It records release source `3a999d994f62f1737eae111d53f83281d1c49f23` on Ubuntu
+x86-64, kernel `6.17.0-1022-azure`, Python 3.14.8, with the same source fingerprint
+and all required commands passing. [v0.1.0](https://github.com/Yash-PK/ops-cloud-foundation-iac/releases/tag/v0.1.0)
+was verified non-draft/non-prerelease and points to that tested source. All three
+reports are attached to the release as well as retained in Git.
 
 After the implementation is committed and stable, execute the README quickstart
 from an isolated temporary clone and produce the local record through the task
