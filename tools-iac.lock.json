@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "tools": {
+    "tofu": {
+      "version": "1.13.1",
+      "release_url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.1",
+      "platforms": {
+        "darwin-arm64": {
+          "url": "https://github.com/opentofu/opentofu/releases/download/v1.13.1/tofu_1.13.1_darwin_arm64.zip",
+          "sha256": "81aebe6453223bcb3ce3c28424b36d009ebfddd3ad65ad1ec3eed0d0d574a77b",
+          "member": "tofu",
+          "archive": "zip",
+          "license_member": "LICENSE"
+        },
+        "linux-x86_64": {
+          "url": "https://github.com/opentofu/opentofu/releases/download/v1.13.1/tofu_1.13.1_linux_amd64.zip",
+          "sha256": "8ccbc6f8ee21d2827715f3c6e08a9b3e0209b1e62057c05067ef117e047c1a80",
+          "member": "tofu",
+          "archive": "zip",
+          "license_member": "LICENSE"
+        },
+        "linux-arm64": {
+          "url": "https://github.com/opentofu/opentofu/releases/download/v1.13.1/tofu_1.13.1_linux_arm64.zip",
+          "sha256": "b9614df40575cc3fc10a8a25025b7245d961da279f715ea3efff4ddae8e6938a",
+          "member": "tofu",
+          "archive": "zip",
+          "license_member": "LICENSE"
+        }
+      }
+    },
+    "tflint": {
+      "version": "0.64.0",
+      "release_url": "https://github.com/terraform-linters/tflint/releases/tag/v0.64.0",
+      "platforms": {
+        "darwin-arm64": {
+          "url": "https://github.com/terraform-linters/tflint/releases/download/v0.64.0/tflint_darwin_arm64.zip",
+          "sha256": "2496e9cb3d24992d553b45e7c87a0fdc9449ca975233876247a9bfeda857e6c0",
+          "member": "tflint",
+          "archive": "zip"
+        },
+        "linux-x86_64": {
+          "url": "https://github.com/terraform-linters/tflint/releases/download/v0.64.0/tflint_linux_amd64.zip",
+          "sha256": "cca9d13e2e1d7a2c627af60ff899a3c9b74212899416aeb96ec764d2ef954537",
+          "member": "tflint",
+          "archive": "zip"
+        },
+        "linux-arm64": {
+          "url": "https://github.com/terraform-linters/tflint/releases/download/v0.64.0/tflint_linux_arm64.zip",
+          "sha256": "560da89aacf59389d4eb029730dd5b109b7288096c32f2726a0d9e783a5ea8eb",
+          "member": "tflint",
+          "archive": "zip"
+        }
+      }
+    }
+  }
+}

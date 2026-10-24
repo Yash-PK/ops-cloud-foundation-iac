@@ -1,0 +1,649 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-08T07:37:29.222866+00:00",
+  "scope": "Official dependency metadata, published checksums, six IaC tool archive byte hashes and five Python wheel byte hashes; no cloud APIs, accounts, resources or external module execution.",
+  "tools": {
+    "tofu": {
+      "version": "1.13.1",
+      "release_url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.1",
+      "published_at": "2026-10-01T17:15:15Z",
+      "prerelease": false,
+      "checksum_url": "https://github.com/opentofu/opentofu/releases/download/v1.13.1/tofu_1.13.1_SHA256SUMS",
+      "checksum_sha256": "f4a03dd8613320c665848cb6e1962ee112d777c9c6a8a725586dcc341b1c7252",
+      "checksum_file_digest_matches": true,
+      "signature_or_attestation_verified": false,
+      "assets": [
+        {
+          "platform": "darwin-arm64",
+          "filename": "tofu_1.13.1_darwin_arm64.zip",
+          "url": "https://github.com/opentofu/opentofu/releases/download/v1.13.1/tofu_1.13.1_darwin_arm64.zip",
+          "size": 33031001,
+          "sha256": "81aebe6453223bcb3ce3c28424b36d009ebfddd3ad65ad1ec3eed0d0d574a77b",
+          "github_digest_matches": true,
+          "published_checksum_matches": true,
+          "archive_bytes_verified": true,
+          "members_verified": [
+            "CHANGELOG.md",
+            "LICENSE",
+            "README.md",
+            "tofu"
+          ]
+        },
+        {
+          "platform": "linux-x86_64",
+          "filename": "tofu_1.13.1_linux_amd64.zip",
+          "url": "https://github.com/opentofu/opentofu/releases/download/v1.13.1/tofu_1.13.1_linux_amd64.zip",
+          "size": 35152633,
+          "sha256": "8ccbc6f8ee21d2827715f3c6e08a9b3e0209b1e62057c05067ef117e047c1a80",
+          "github_digest_matches": true,
+          "published_checksum_matches": true,
+          "archive_bytes_verified": true,
+          "members_verified": [
+            "CHANGELOG.md",
+            "LICENSE",
+            "README.md",
+            "tofu"
+          ]
+        },
+        {
+          "platform": "linux-arm64",
+          "filename": "tofu_1.13.1_linux_arm64.zip",
+          "url": "https://github.com/opentofu/opentofu/releases/download/v1.13.1/tofu_1.13.1_linux_arm64.zip",
+          "size": 31402562,
+          "sha256": "b9614df40575cc3fc10a8a25025b7245d961da279f715ea3efff4ddae8e6938a",
+          "github_digest_matches": true,
+          "published_checksum_matches": true,
+          "archive_bytes_verified": true,
+          "members_verified": [
+            "CHANGELOG.md",
+            "LICENSE",
+            "README.md",
+            "tofu"
+          ]
+        }
+      ],
+      "security": {
+        "source_url": "https://api.github.com/repos/opentofu/opentofu/security-advisories?per_page=100",
+        "published_advisory_count": 10,
+        "advisories": [
+          {
+            "id": "GHSA-vxp5-g6gx-r4j2",
+            "url": "https://github.com/opentofu/opentofu/security/advisories/GHSA-vxp5-g6gx-r4j2",
+            "severity": "low",
+            "published_at": "2026-08-19T11:53:51Z",
+            "updated_at": "2026-08-19T11:53:51Z",
+            "affected": [
+              {
+                "range": "< 1.11.14, < 1.12.6",
+                "fixed": "1.11.14, 1.12.6"
+              }
+            ]
+          },
+          {
+            "id": "GHSA-q7j3-v8qv-22vq",
+            "url": "https://github.com/opentofu/opentofu/security/advisories/GHSA-q7j3-v8qv-22vq",
+            "severity": "high",
+            "published_at": "2026-06-18T15:20:30Z",
+            "updated_at": "2026-06-18T15:20:30Z",
+            "affected": [
+              {
+                "range": "< v1.11.10, < v1.12.3, v1.10.x",
+                "fixed": "v1.11.10, v1.12.3"
+              }
+            ]
+          },
+          {
+            "id": "GHSA-22w5-2fxg-vrwx",
+            "url": "https://github.com/opentofu/opentofu/security/advisories/GHSA-22w5-2fxg-vrwx",
+            "severity": "low",
+            "published_at": "2026-06-12T16:36:19Z",
+            "updated_at": "2026-06-12T16:36:19Z",
+            "affected": [
+              {
+                "range": "< 1.11.9, < 1.12.2",
+                "fixed": "1.11.9, 1.12.2"
+              }
+            ]
+          },
+          {
+            "id": "GHSA-pxh5-6rrc-8rjv",
+            "url": "https://github.com/opentofu/opentofu/security/advisories/GHSA-pxh5-6rrc-8rjv",
+            "severity": "low",
+            "published_at": "2026-05-14T12:04:11Z",
+            "updated_at": "2026-05-14T12:04:11Z",
+            "affected": [
+              {
+                "range": "< 1.11.8",
+                "fixed": "1.11.8, 1.12.0"
+              }
+            ]
+          },
+          {
+            "id": "GHSA-wcmj-x466-56mm",
+            "url": "https://github.com/opentofu/opentofu/security/advisories/GHSA-wcmj-x466-56mm",
+            "severity": "medium",
+            "published_at": "2026-05-21T17:47:22Z",
+            "updated_at": "2026-05-21T17:47:22Z",
+            "affected": [
+              {
+                "range": "< 1.11.7",
+                "fixed": "1.11.7, 1.10.10"
+              }
+            ]
+          },
+          {
+            "id": "GHSA-hw5x-4r37-72w7",
+            "url": "https://github.com/opentofu/opentofu/security/advisories/GHSA-hw5x-4r37-72w7",
+            "severity": "low",
+            "published_at": "2026-04-13T19:47:56Z",
+            "updated_at": "2026-04-13T19:47:56Z",
+            "affected": [
+              {
+                "range": "< 1.11.6",
+                "fixed": "1.11.6"
+              }
+            ]
+          },
+          {
+            "id": "GHSA-r92c-9c7f-3pj8",
+            "url": "https://github.com/opentofu/opentofu/security/advisories/GHSA-r92c-9c7f-3pj8",
+            "severity": "low",
+            "published_at": "2026-01-21T17:00:31Z",
+            "updated_at": "2026-02-03T19:08:00Z",
+            "affected": [
+              {
+                "range": "< 1.11.4",
+                "fixed": "1.11.4"
+              }
+            ]
+          },
+          {
+            "id": "GHSA-mjcp-gpgx-ggcg",
+            "url": "https://github.com/opentofu/opentofu/security/advisories/GHSA-mjcp-gpgx-ggcg",
+            "severity": "medium",
+            "published_at": "2025-12-09T16:04:05Z",
+            "updated_at": "2025-12-09T16:04:05Z",
+            "affected": [
+              {
+                "range": "< 1.10.8",
+                "fixed": "1.10.8"
+              }
+            ]
+          },
+          {
+            "id": "GHSA-w2jf-268q-mrvh",
+            "url": "https://github.com/opentofu/opentofu/security/advisories/GHSA-w2jf-268q-mrvh",
+            "severity": "low",
+            "published_at": "2025-11-06T14:04:47Z",
+            "updated_at": "2025-11-06T14:04:47Z",
+            "affected": [
+              {
+                "range": "< 1.10.7",
+                "fixed": "1.10.7"
+              }
+            ]
+          },
+          {
+            "id": "GHSA-wpr2-j6gr-pjw9",
+            "url": "https://github.com/opentofu/opentofu/security/advisories/GHSA-wpr2-j6gr-pjw9",
+            "severity": "low",
+            "published_at": "2024-10-03T14:34:00Z",
+            "updated_at": "2024-10-03T14:34:00Z",
+            "affected": [
+              {
+                "range": "1.8.0, 1.8.1, 1.8.2",
+                "fixed": ">= 1.8.3"
+              }
+            ]
+          }
+        ]
+      },
+      "license": "MPL-2.0",
+      "license_url": "https://github.com/opentofu/opentofu/blob/v1.13.1/LICENSE",
+      "supported_series_until": "2027-08",
+      "support_url": "https://opentofu.org/blog/opentofu-1-13-0/",
+      "minimum_macos": "13",
+      "advisory_assessment": "Selected 1.13.1 is above the fixed releases listed in all ten currently published upstream advisories; this is not a complete transitive vulnerability audit."
+    },
+    "tflint": {
+      "version": "0.64.0",
+      "release_url": "https://github.com/terraform-linters/tflint/releases/tag/v0.64.0",
+      "published_at": "2026-07-17T15:37:19Z",
+      "prerelease": false,
+      "checksum_url": "https://github.com/terraform-linters/tflint/releases/download/v0.64.0/checksums.txt",
+      "checksum_sha256": "07496dc0ab06a39fa718a9f8e471112b6e6ab4fd3a9f1024210a55fe3f1a9ff9",
+      "checksum_file_digest_matches": true,
+      "signature_or_attestation_verified": false,
+      "assets": [
+        {
+          "platform": "darwin-arm64",
+          "filename": "tflint_darwin_arm64.zip",
+          "url": "https://github.com/terraform-linters/tflint/releases/download/v0.64.0/tflint_darwin_arm64.zip",
+          "size": 16312448,
+          "sha256": "2496e9cb3d24992d553b45e7c87a0fdc9449ca975233876247a9bfeda857e6c0",
+          "github_digest_matches": true,
+          "published_checksum_matches": true,
+          "archive_bytes_verified": true,
+          "members_verified": [
+            "tflint"
+          ]
+        },
+        {
+          "platform": "linux-x86_64",
+          "filename": "tflint_linux_amd64.zip",
+          "url": "https://github.com/terraform-linters/tflint/releases/download/v0.64.0/tflint_linux_amd64.zip",
+          "size": 17105397,
+          "sha256": "cca9d13e2e1d7a2c627af60ff899a3c9b74212899416aeb96ec764d2ef954537",
+          "github_digest_matches": true,
+          "published_checksum_matches": true,
+          "archive_bytes_verified": true,
+          "members_verified": [
+            "tflint"
+          ]
+        },
+        {
+          "platform": "linux-arm64",
+          "filename": "tflint_linux_arm64.zip",
+          "url": "https://github.com/terraform-linters/tflint/releases/download/v0.64.0/tflint_linux_arm64.zip",
+          "size": 15476601,
+          "sha256": "560da89aacf59389d4eb029730dd5b109b7288096c32f2726a0d9e783a5ea8eb",
+          "github_digest_matches": true,
+          "published_checksum_matches": true,
+          "archive_bytes_verified": true,
+          "members_verified": [
+            "tflint"
+          ]
+        }
+      ],
+      "security": {
+        "source_url": "https://api.github.com/repos/terraform-linters/tflint/security-advisories?per_page=100",
+        "published_advisory_count": 0,
+        "advisories": []
+      },
+      "license": "MPL-2.0 AND BUSL-1.1",
+      "license_url": "https://github.com/terraform-linters/tflint/blob/v0.64.0/README.md#license",
+      "support": "Latest version only; no security updates for older releases.",
+      "support_url": "https://github.com/terraform-linters/tflint/blob/v0.64.0/SECURITY.md",
+      "bundled_terraform_ruleset": "0.15.0",
+      "bundled_ruleset_source": "https://raw.githubusercontent.com/terraform-linters/tflint/v0.64.0/go.mod",
+      "aws_ruleset_enabled": false
+    }
+  },
+  "provider": {
+    "source": "registry.terraform.io/hashicorp/aws",
+    "version": "6.68.0",
+    "upstream_release_url": "https://github.com/hashicorp/terraform-provider-aws/releases/tag/v6.68.0",
+    "opentofu_build_release_url": "https://github.com/opentofu/terraform-provider-aws/releases/tag/v6.68.0",
+    "opentofu_build_published_at": "2026-10-08T01:22:02Z",
+    "license": "MPL-2.0",
+    "license_url": "https://github.com/hashicorp/terraform-provider-aws/blob/v6.68.0/LICENSE",
+    "support": "New features and fixes normally target latest major version; security backports considered case by case.",
+    "support_url": "https://hashicorp.github.io/terraform-provider-aws/faq/",
+    "registries": {
+      "registry.opentofu.org": {
+        "selected": false,
+        "platforms": [
+          {
+            "metadata_url": "https://registry.opentofu.org/v1/providers/hashicorp/aws/6.68.0/download/darwin/arm64",
+            "filename": "terraform-provider-aws_6.68.0_darwin_arm64.zip",
+            "download_url": "https://github.com/opentofu/terraform-provider-aws/releases/download/v6.68.0/terraform-provider-aws_6.68.0_darwin_arm64.zip",
+            "sha256": "a1b328d08cb3a35c33dae78d83f4e434b098e7311e88732803682939f0b24be7",
+            "protocols": [
+              "5.0"
+            ],
+            "checksum_url": "https://github.com/opentofu/terraform-provider-aws/releases/download/v6.68.0/terraform-provider-aws_6.68.0_SHA256SUMS",
+            "checksum_file_sha256": "b1b00d952b8ad52a169470a50df8d93a8434ea5200cc1a82feb87689473c3adc",
+            "registry_checksum_matches": true,
+            "archive_bytes_verified_in_this_audit": false,
+            "signing_key_ids": [
+              "0C0AF313E5FD9F80"
+            ],
+            "github_digest_matches": true,
+            "size": 170770208
+          },
+          {
+            "metadata_url": "https://registry.opentofu.org/v1/providers/hashicorp/aws/6.68.0/download/linux/amd64",
+            "filename": "terraform-provider-aws_6.68.0_linux_amd64.zip",
+            "download_url": "https://github.com/opentofu/terraform-provider-aws/releases/download/v6.68.0/terraform-provider-aws_6.68.0_linux_amd64.zip",
+            "sha256": "7f82485b713c5046010cb53adb5bb26e961cf428b9f3c9b0c33f3ee31ccd02e5",
+            "protocols": [
+              "5.0"
+            ],
+            "checksum_url": "https://github.com/opentofu/terraform-provider-aws/releases/download/v6.68.0/terraform-provider-aws_6.68.0_SHA256SUMS",
+            "checksum_file_sha256": "b1b00d952b8ad52a169470a50df8d93a8434ea5200cc1a82feb87689473c3adc",
+            "registry_checksum_matches": true,
+            "archive_bytes_verified_in_this_audit": false,
+            "signing_key_ids": [
+              "0C0AF313E5FD9F80"
+            ],
+            "github_digest_matches": true,
+            "size": 178231524
+          },
+          {
+            "metadata_url": "https://registry.opentofu.org/v1/providers/hashicorp/aws/6.68.0/download/linux/arm64",
+            "filename": "terraform-provider-aws_6.68.0_linux_arm64.zip",
+            "download_url": "https://github.com/opentofu/terraform-provider-aws/releases/download/v6.68.0/terraform-provider-aws_6.68.0_linux_arm64.zip",
+            "sha256": "64e0d39cca5460b44579ac2bf9004aaa804c6c806cb4af0f57c0194851538728",
+            "protocols": [
+              "5.0"
+            ],
+            "checksum_url": "https://github.com/opentofu/terraform-provider-aws/releases/download/v6.68.0/terraform-provider-aws_6.68.0_SHA256SUMS",
+            "checksum_file_sha256": "b1b00d952b8ad52a169470a50df8d93a8434ea5200cc1a82feb87689473c3adc",
+            "registry_checksum_matches": true,
+            "archive_bytes_verified_in_this_audit": false,
+            "signing_key_ids": [
+              "0C0AF313E5FD9F80"
+            ],
+            "github_digest_matches": true,
+            "size": 159710079
+          }
+        ]
+      },
+      "registry.terraform.io": {
+        "selected": true,
+        "platforms": [
+          {
+            "metadata_url": "https://registry.terraform.io/v1/providers/hashicorp/aws/6.68.0/download/darwin/arm64",
+            "filename": "terraform-provider-aws_6.68.0_darwin_arm64.zip",
+            "download_url": "https://releases.hashicorp.com/terraform-provider-aws/6.68.0/terraform-provider-aws_6.68.0_darwin_arm64.zip",
+            "sha256": "f292ad91c97ac7354a04a698f346c2a0c3866d9170ca45dda6a6bfab71180be0",
+            "protocols": [
+              "5.0"
+            ],
+            "checksum_url": "https://releases.hashicorp.com/terraform-provider-aws/6.68.0/terraform-provider-aws_6.68.0_SHA256SUMS",
+            "checksum_file_sha256": "d2812aa57a8a874c29a9c33d6184cc04ea2e138fc87ff0cd33e7f610063b07e4",
+            "registry_checksum_matches": true,
+            "archive_bytes_verified_in_this_audit": false,
+            "signing_key_ids": [
+              "34365D9472D7468F"
+            ]
+          },
+          {
+            "metadata_url": "https://registry.terraform.io/v1/providers/hashicorp/aws/6.68.0/download/linux/amd64",
+            "filename": "terraform-provider-aws_6.68.0_linux_amd64.zip",
+            "download_url": "https://releases.hashicorp.com/terraform-provider-aws/6.68.0/terraform-provider-aws_6.68.0_linux_amd64.zip",
+            "sha256": "b2511842cb6b23036c72babbaf12b4984835bb2824f938882330b51c68bdaecd",
+            "protocols": [
+              "5.0"
+            ],
+            "checksum_url": "https://releases.hashicorp.com/terraform-provider-aws/6.68.0/terraform-provider-aws_6.68.0_SHA256SUMS",
+            "checksum_file_sha256": "d2812aa57a8a874c29a9c33d6184cc04ea2e138fc87ff0cd33e7f610063b07e4",
+            "registry_checksum_matches": true,
+            "archive_bytes_verified_in_this_audit": false,
+            "signing_key_ids": [
+              "34365D9472D7468F"
+            ]
+          },
+          {
+            "metadata_url": "https://registry.terraform.io/v1/providers/hashicorp/aws/6.68.0/download/linux/arm64",
+            "filename": "terraform-provider-aws_6.68.0_linux_arm64.zip",
+            "download_url": "https://releases.hashicorp.com/terraform-provider-aws/6.68.0/terraform-provider-aws_6.68.0_linux_arm64.zip",
+            "sha256": "abd449fbf38cf828b8b17bc8540752733dd861160504a45b411e72e1792c758c",
+            "protocols": [
+              "5.0"
+            ],
+            "checksum_url": "https://releases.hashicorp.com/terraform-provider-aws/6.68.0/terraform-provider-aws_6.68.0_SHA256SUMS",
+            "checksum_file_sha256": "d2812aa57a8a874c29a9c33d6184cc04ea2e138fc87ff0cd33e7f610063b07e4",
+            "registry_checksum_matches": true,
+            "archive_bytes_verified_in_this_audit": false,
+            "signing_key_ids": [
+              "34365D9472D7468F"
+            ]
+          }
+        ]
+      }
+    },
+    "security": {
+      "upstream": {
+        "source_url": "https://api.github.com/repos/hashicorp/terraform-provider-aws/security-advisories?per_page=100",
+        "published_advisory_count": 0,
+        "advisories": []
+      },
+      "opentofu_build": {
+        "source_url": "https://api.github.com/repos/opentofu/terraform-provider-aws/security-advisories?per_page=100",
+        "published_advisory_count": 0,
+        "advisories": []
+      }
+    },
+    "lock_generation": "Generated by native OpenTofu init/providers lock for darwin_arm64, linux_amd64 and linux_arm64; subsequent native init pruned unused migration-shim entry without replacing native hashes.",
+    "runtime_or_cloud_validation": "Not established by dependency metadata; use validation evidence for executed mock/schema checks. No real AWS plan or apply.",
+    "selection_observation": {
+      "date": "2026-10-08",
+      "opentofu_discovery": "native timeout; HTTPS probe HTTP403 error code1010",
+      "hashicorp_discovery": "HTTPS200",
+      "decision": "Explicit upstream HashiCorp registry; OpenTofu engine unchanged, no weaker verification."
+    },
+    "installation_observations": {
+      "observed_on": "2026-10-08",
+      "provenance": "Native development tool output reported by the executing maintainer agent; original command streams were not saved to a file. Current lockfiles independently inspected during this documentation update. Formal revision-bound evidence remains separate.",
+      "opentofu_discovery": {
+        "result": "failed",
+        "native_result": "timeout",
+        "https_probe_status": 403,
+        "https_probe_body": "error code: 1010",
+        "diagnosis": "Observed access failure; root cause not independently established."
+      },
+      "hashicorp_discovery": {
+        "https_probe_status": 200,
+        "selection": "Explicit registry.terraform.io/hashicorp/aws at 6.68.0"
+      },
+      "lock_update": {
+        "result": "failed subsequent validation",
+        "warning": "Dependency lock file entries automatically updated",
+        "mapping": "registry.terraform.io/hashicorp/aws => registry.opentofu.org/hashicorp/aws",
+        "validation_error": "registry.opentofu.org/hashicorp/aws: there is no package for registry.opentofu.org/hashicorp/aws 6.68.0 cached in .terraform/providers",
+        "explanation": "Native predecessor-registry shim added an unused synthetic provider identity. This is dependency metadata, not infrastructure state migration.",
+        "source": "https://github.com/opentofu/opentofu/blob/v1.13.1/internal/command/meta_dependencies.go"
+      },
+      "resolution": {
+        "operation": "Subsequent native tofu init -backend=false removed the unused registry.opentofu.org entry.",
+        "manual_hash_replacement": false,
+        "subsequent_schema_validation": "Both roots passed with zero warnings, as reported by executing maintainer agent.",
+        "subsequent_mock_plans": "23 passed in a development run; no formal release claim."
+      },
+      "native_signature": {
+        "result": "accepted with expired-key warning",
+        "key_id": "34365D9472D7468F",
+        "warning_fragment": "gpg key expired, this will fail in future versions of OpenTofu",
+        "signature_check_disabled_by_repository": false,
+        "tls_check_disabled_by_repository": false,
+        "checksum_check_disabled_by_repository": false,
+        "independent_gpg_verification": false,
+        "limitation": "OpenTofu accepted the provider through its native expired-key warning policy. A currently valid key lifetime is not established. Future installation may reject until upstream updates key metadata or a reviewed release.",
+        "status": "unresolved upstream signing-key expiry",
+        "source": "https://github.com/opentofu/opentofu/blob/v1.13.1/internal/getproviders/package_authentication.go"
+      }
+    },
+    "native_lockfiles": [
+      {
+        "path": "stacks/foundation/.terraform.lock.hcl",
+        "sha256": "40dcb9c90b924706446db3eb90eed48cb3f48df676078f5cca3b5ca1f4a02df3",
+        "provider_identities": [
+          "registry.terraform.io/hashicorp/aws"
+        ],
+        "h1": [
+          "h1:79hHQtjGSCiXBZK+VDiNUdI2SLXbNaHf+CHySvKFnvA=",
+          "h1:rB2Amjxr32AZWeWsDMQyU61xmW8IvSAUXhv4ogvx9l4=",
+          "h1:s5EXu9EtGfnLR3ebHoIyZBLRYMPcRL9zcfx/NKi+Q9o="
+        ],
+        "zh_count": 16,
+        "manually_authored": false
+      },
+      {
+        "path": "stacks/state-bootstrap/.terraform.lock.hcl",
+        "sha256": "40dcb9c90b924706446db3eb90eed48cb3f48df676078f5cca3b5ca1f4a02df3",
+        "provider_identities": [
+          "registry.terraform.io/hashicorp/aws"
+        ],
+        "h1": [
+          "h1:79hHQtjGSCiXBZK+VDiNUdI2SLXbNaHf+CHySvKFnvA=",
+          "h1:rB2Amjxr32AZWeWsDMQyU61xmW8IvSAUXhv4ogvx9l4=",
+          "h1:s5EXu9EtGfnLR3ebHoIyZBLRYMPcRL9zcfx/NKi+Q9o="
+        ],
+        "zh_count": 16,
+        "manually_authored": false
+      }
+    ]
+  },
+  "python_dependencies": {
+    "python-hcl2": {
+      "version": "8.1.4",
+      "metadata_url": "https://pypi.org/pypi/python-hcl2/8.1.4/json",
+      "requires_python": ">=3.8.0",
+      "requires_dist": [
+        "lark<2.0,>=1.1.5",
+        "regex>=2024.4.16"
+      ],
+      "license": "MIT",
+      "upstream_url": "https://github.com/amplify-education/python-hcl2",
+      "pypi_reported_vulnerabilities": [],
+      "security": {
+        "source_url": "https://api.github.com/repos/amplify-education/python-hcl2/security-advisories?per_page=100",
+        "published_advisory_count": 0,
+        "advisories": []
+      },
+      "wheels": [
+        {
+          "filename": "python_hcl2-8.1.4-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/5a/c7/9b8918ab4954ecad677b03f36f9121d5467a4285f41507fdc6789a33dc3c/python_hcl2-8.1.4-py3-none-any.whl",
+          "sha256": "75738bd95717d692a683495babf4d00063f1b211e2eca04b156c6d79b9a0feae",
+          "size": 102957,
+          "uploaded_at": "2026-09-08T08:26:25.344406Z",
+          "archive_bytes_verified": true
+        }
+      ],
+      "support_note": "Python >=3.8 accepted by metadata, but tagged CI/classifiers list only 3.8-3.13. CPython3.14 operation must be validated by this repository tests; no upstream3.14 support claim.",
+      "support_source": "https://raw.githubusercontent.com/amplify-education/python-hcl2/v8.1.4/.github/workflows/pr_check.yml"
+    },
+    "lark": {
+      "version": "1.3.1",
+      "metadata_url": "https://pypi.org/pypi/lark/1.3.1/json",
+      "requires_python": ">=3.8",
+      "requires_dist": [
+        "regex; extra == \"regex\"",
+        "js2py; extra == \"nearley\"",
+        "atomicwrites; extra == \"atomic-cache\"",
+        "interegular<0.4.0,>=0.3.1; extra == \"interegular\""
+      ],
+      "license": "MIT",
+      "upstream_url": "https://github.com/lark-parser/lark",
+      "pypi_reported_vulnerabilities": [],
+      "security": {
+        "source_url": "https://api.github.com/repos/lark-parser/lark/security-advisories?per_page=100",
+        "published_advisory_count": 0,
+        "advisories": []
+      },
+      "wheels": [
+        {
+          "filename": "lark-1.3.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/82/3d/14ce75ef66813643812f3093ab17e46d3a206942ce7376d31ec2d36229e7/lark-1.3.1-py3-none-any.whl",
+          "sha256": "c629b661023a014c37da873b4ff58a817398d12635d3bbb2c5a03be7fe5d1e12",
+          "size": 113151,
+          "uploaded_at": "2025-10-27T18:25:54.882451Z",
+          "archive_bytes_verified": true
+        }
+      ]
+    },
+    "regex": {
+      "version": "2026.9.29",
+      "metadata_url": "https://pypi.org/pypi/regex/2026.9.29/json",
+      "requires_python": ">=3.10",
+      "requires_dist": null,
+      "license": "Apache-2.0 AND CNRI-Python",
+      "upstream_url": "https://github.com/mrabarnett/mrab-regex",
+      "pypi_reported_vulnerabilities": [],
+      "security": {
+        "source_url": "https://api.github.com/repos/mrabarnett/mrab-regex/security-advisories?per_page=100",
+        "published_advisory_count": 0,
+        "advisories": []
+      },
+      "wheels": [
+        {
+          "filename": "regex-2026.9.29-cp314-cp314-macosx_11_0_arm64.whl",
+          "url": "https://files.pythonhosted.org/packages/dd/5f/52bc2abc3fef040cd9de76ab29c918d6a717a454ae2b9dd7938b0c95656d/regex-2026.9.29-cp314-cp314-macosx_11_0_arm64.whl",
+          "sha256": "0166844493626c5015c6088ee15c9ca2fd060ca15b7641d1657da6a58432ae33",
+          "size": 293518,
+          "uploaded_at": "2026-09-29T00:47:39.957880Z",
+          "archive_bytes_verified": true
+        },
+        {
+          "filename": "regex-2026.9.29-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+          "url": "https://files.pythonhosted.org/packages/dc/fc/cf50671215ee0057046980b4571ef8646a005819bb67f0957e779ed107a5/regex-2026.9.29-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "b97a38fb4c732b6832db6bf108963adbcd82ef1268ba2025dce390f45af75efa",
+          "size": 806037,
+          "uploaded_at": "2026-09-29T00:47:41.676911Z",
+          "archive_bytes_verified": true
+        },
+        {
+          "filename": "regex-2026.9.29-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+          "url": "https://files.pythonhosted.org/packages/a9/4d/041d9458a645fee4fce4d642a89d27271a3cfcd91095104f6dde44da70bf/regex-2026.9.29-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "2f7f7aa47b229f2b39a2ae2596d2ad5625d77b5eb9856fac2dab3eb506cdd0a0",
+          "size": 807176,
+          "uploaded_at": "2026-09-29T00:47:47.372667Z",
+          "archive_bytes_verified": true
+        }
+      ]
+    }
+  },
+  "shared_quality_tools": {
+    "shellcheck": {
+      "version": "0.11.0",
+      "release_url": "https://github.com/koalaman/shellcheck/releases/tag/v0.11.0",
+      "release_assets_match_tools_lock": true,
+      "security": {
+        "source_url": "https://api.github.com/repos/koalaman/shellcheck/security-advisories?per_page=100",
+        "published_advisory_count": 0,
+        "advisories": []
+      }
+    },
+    "shfmt": {
+      "version": "3.14.1",
+      "release_url": "https://github.com/mvdan/sh/releases/tag/v3.14.1",
+      "release_assets_match_tools_lock": true,
+      "security": {
+        "source_url": "https://api.github.com/repos/mvdan/sh/security-advisories?per_page=100",
+        "published_advisory_count": 0,
+        "advisories": []
+      }
+    },
+    "actionlint": {
+      "version": "1.7.12",
+      "release_url": "https://github.com/rhysd/actionlint/releases/tag/v1.7.12",
+      "release_assets_match_tools_lock": true,
+      "security": {
+        "source_url": "https://api.github.com/repos/rhysd/actionlint/security-advisories?per_page=100",
+        "published_advisory_count": 0,
+        "advisories": []
+      }
+    },
+    "gitleaks": {
+      "version": "8.30.1",
+      "release_url": "https://github.com/gitleaks/gitleaks/releases/tag/v8.30.1",
+      "release_assets_match_tools_lock": true,
+      "security": {
+        "source_url": "https://api.github.com/repos/gitleaks/gitleaks/security-advisories?per_page=100",
+        "published_advisory_count": 0,
+        "advisories": []
+      }
+    },
+    "ruff": {
+      "version": "0.16.10",
+      "metadata_url": "https://pypi.org/pypi/ruff/0.16.10/json",
+      "pypi_reported_vulnerabilities": [],
+      "security": {
+        "source_url": "https://api.github.com/repos/astral-sh/ruff/security-advisories?per_page=100",
+        "published_advisory_count": 0,
+        "advisories": []
+      }
+    }
+  },
+  "limitations": [
+    "Advisory APIs and PyPI vulnerability records are a dated partial view, not a complete SBOM or zero-vulnerability claim.",
+    "Tool and wheel checksums were checked over TLS; no independent GPG/Sigstore/GitHub attestation verification was performed in this audit; native provider verification ran separately and warned of an expired key.",
+    "All target platform archive hashes were verified; cross-platform executable behavior requires separate runtime/CI evidence.",
+    "AWS provider archive bytes are left to OpenTofu verified installation; this audit compared registry checksums, fetched checksum files and OpenTofu release asset digests.",
+    "No Terraform engine compatibility, real authenticated cloud plan, cloud apply, IAM effectiveness or cloud service behavior is proved.",
+    "Native provider signing-key expiry remains unresolved; successful installation is not evidence of a current key lifetime, and future engine versions may reject it."
+  ],
+  "updated_at_utc": "2026-10-08T07:54:12.637497+00:00"
+}
